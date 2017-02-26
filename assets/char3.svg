@@ -11,8 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="65.984695mm"
-   height="83.970535mm"
-   viewBox="0 0 65.984697 83.970537"
+   height="83.922798mm"
+   viewBox="0 0 65.984697 83.9228"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.0 r15299"
@@ -22,9 +22,9 @@
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 148.49999 : 1"
-       inkscape:vp_y="0 : 999.99998 : 0"
+       inkscape:vp_y="0 : 999.99997 : 0"
        inkscape:vp_z="210 : 148.49999 : 1"
-       inkscape:persp3d-origin="105.00001 : 98.999998 : 1"
+       inkscape:persp3d-origin="105.00001 : 98.999997 : 1"
        id="perspective4867" />
     <linearGradient
        inkscape:collect="always"
@@ -47,13 +47,13 @@
        x2="34.076866"
        y2="285.10651"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(42.498285,152.13993)" />
+       gradientTransform="translate(40.106923,152.13993)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4857"
        id="linearGradient4865"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(42.498286,152.13993)"
+       gradientTransform="translate(40.106924,152.13993)"
        x1="34.344135"
        y1="227.37628"
        x2="34.076866"
@@ -67,8 +67,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-249.88858"
-     inkscape:cy="62.454148"
+     inkscape:cx="-541.61783"
+     inkscape:cy="62.273731"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -97,7 +97,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-42.498286,-152.13992)">
+     transform="translate(-40.106924,-152.13992)">
     <path
        style="fill:#000000;fill-opacity:0.96132597;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 151.38599,142.02146 -27.14469,1.63575 27.13017,2.33747 z"

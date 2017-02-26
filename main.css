@@ -1,13 +1,67 @@
 #gameBody{
   border: 1px solid black;
-  height: 500;
-  width: 800;
+  height: 560;
+  width: 900;
   align-content: center;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
+
 #welcome{
+  width: 230px;
+  height: 75px;
   font-size: 40px;
   text-align: center;
+  border-radius: 8px;
+  font-family: fantasy;
+  padding-top: 20px;
+  background-color: #ffd65b;
+  color: #292929;
+  margin: inherit;
+  margin-top: 10px;
+  border: 2px solid #292929;
+  box-shadow: 7px 7px 3px #292929;
+}
+
+
+#selectCharacter{
+  /*background-color: red;*/
+  width: 800px;
+  height: 400px;
+  margin: inherit;
+  padding-top: 5px;
+}
+
+#startButton{
+  margin:-29px 0px 0px 395px;
+  width: 100px;
+  height: 40px;
+  background-color: #fc3;
+  border: 3px solid #fc3;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: fantasy;
+  color: #292929;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+#startButton:hover{
+  margin:-29px 0px 0px 395px;
+  width: 100px;
+  height: 40px;
+  background-color: white;
+  border: 3px solid #fc3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#word{
+  margin-top: -7px;
+}
+
+#des{
+  font-size: 14px;
+  margin-top:  -35px;
 }
