@@ -1,0 +1,13 @@
+#gameBody{
+  border: 1px solid black;
+  height: 500;
+  width: 800;
+  align-content: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#welcome{
+  font-size: 40px;
+  text-align: center;
+}
