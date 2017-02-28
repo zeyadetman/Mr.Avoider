@@ -1,3 +1,10 @@
+var unknown = document.querySelector("#unknown");
+var unknownimg = document.createElement('img');
+unknownimg.src = "assets/question_mark.png";
+unknown.appendChild(unknownimg);
+var orUnknownImageSrc = unknownimg.src.toString();
+
+
 var char1 = document.querySelector("#char1");
 var char1img = document.createElement('img');
 char1img.setAttribute('id', 'char1');
@@ -43,27 +50,25 @@ char4.onclick = function() {
 
 //el.onclick="unknowing.src=this.src";
 
-var unknown = document.querySelector("#unknown");
-var unknownimg = document.createElement('img');
-unknownimg.src = "assets/question_mark.png";
-unknown.appendChild(unknownimg);
+
 
 var chars =[
-  [char1,char1img.src.toString(),'#char1'],
-  [char2,char2img.src.toString(),'#char2'],
-  [char3,char3img.src.toString(),'#char3'],
-  [char4,char4img.src.toString(),'#char4']
+  [char1,char1img,char1img.src.toString(),'#char1'],
+  [char2,char2img,char2img.src.toString(),'#char2'],
+  [char3,char3img,char3img.src.toString(),'#char3'],
+  [char4,char4img,char4img.src.toString(),'#char4']
 ];
 
 for (var i = 0; i < chars.length; i++) {
   chars[i][0].style.float = "left";
   chars[i][0].style.padding = "20px";
   chars[i][0].style.margin = "0px 0px 0px 27px";
+  chars[i][1].setAttribute('class','chars');
 }
+
 unknown.style.margin = "200px 0px 0px 330px";
 
 /*clickHandler();
-
 function clickHandler() {
   for (var i = 0; i < chars.length; i++) {
     var x = document.getElementById(chars[i][2].toString());
@@ -76,5 +81,10 @@ function clickHandler() {
 var startButton = document.querySelector("#startButton");
 startButton.addEventListener("click", startGameHandler , false);
 function startGameHandler() {
-  render();
+  if(unknownimg.src.toString() === orUnknownImageSrc) window.alert(" Please Select character :) ");
+  else render();
+}
+
+function render(){
+  window.open("gamepage.html", '_self',false);
 }
