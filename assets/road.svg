@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.0 r15299"
-   sodipodi:docname="car road.svg">
+   sodipodi:docname="road.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="588.42175"
+     inkscape:cx="780.13562"
      inkscape:cy="877.45216"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -55,11 +55,6 @@
        id="guide4724"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="4.9995456,132.52879"
-       orientation="0,1"
-       id="guide4726"
-       inkscape:locked="false" />
-    <sodipodi:guide
        position="4.6215756,0.99308134"
        orientation="0,1"
        id="guide4728"
@@ -75,12 +70,12 @@
        id="guide4732"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="144.32555,250.28473"
+       position="16.036172,477.87791"
        orientation="1,0"
        id="guide4734"
        inkscape:locked="false" />
     <sodipodi:guide
-       position="405.18059,216.07424"
+       position="548.43707,463.9799"
        orientation="1,0"
        id="guide4736"
        inkscape:locked="false" />
@@ -109,19 +104,10 @@
        height="434.05835"
        x="-145.79033"
        y="-115.96273" />
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:0.96132597;stroke:none;stroke-width:0.11906249;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:100;stroke-opacity:1;paint-order:stroke markers fill"
-       id="rect4718"
-       width="261.92413"
-       height="18.174326"
-       x="-1.4647777"
-       y="16.830889" />
-    <rect
-       y="167.23515"
-       x="-1.4647791"
-       height="18.174326"
-       width="261.9241"
-       id="rect4720"
-       style="opacity:1;fill:#ffffff;fill-opacity:0.96132597;stroke:none;stroke-width:0.1190625;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:100;stroke-opacity:1;paint-order:stroke markers fill" />
+    <path
+       style="opacity:1;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.11906249;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:100;stroke-opacity:1;paint-order:stroke markers fill"
+       d="m -128.68485,-116.07056 v 31.12407 h 531.3316 v -31.12407 z"
+       id="path6205"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -68,6 +68,8 @@ for (var i = 0; i < chars.length; i++) {
 
 unknown.style.margin = "200px 0px 0px 330px";
 
+
+
 /*clickHandler();
 function clickHandler() {
   for (var i = 0; i < chars.length; i++) {
@@ -76,15 +78,59 @@ function clickHandler() {
   }
 }*/
 
+function render() {
+
+
+}
 
 
 var startButton = document.querySelector("#startButton");
 startButton.addEventListener("click", startGameHandler , false);
 function startGameHandler() {
   if(unknownimg.src.toString() === orUnknownImageSrc) window.alert(" Please Select character :) ");
-  else render();
+  else {document.getElementById("gameBody").innerHTML = "";
+  var gameboard = document.querySelector('#gameBody');
+  var map = [
+    [0,0,0,0,0,0,0],
+    [1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1],
+    [0,0,0,0,0,0,0],
+    [1,1,1,1,1,1,1],
+    [1,1,1,1,1,1,1],
+    [0,0,0,0,0,0,0]
+  ];
+
+  var Size = 10;
+  var Space = 1;
+  var mapRows = map.length;
+  var mapColumns = map[0].length;
+
+  for(var i = 0; i < mapRows; i++ ){
+    for(var j=0;j< mapColumns ; j++){
+      var celldiv = document.createElement("div");
+      var cell = document.createElement("img");
+      celldiv.setAttribute('class', 'cellsdiv');
+      cell.setAttribute('class', 'cells');
+      celldiv.appendChild(cell);
+      gameboard.appendChild(celldiv);
+      if(map[i][j] === 0 && j%2==0) { cell.src ="assets/safe2.svg"; cell.style.backgroundColor = "#89A41C";}
+      else if(map[i][j] == 0 && i==3 && j%2==1) {cell.src = "assets/safe1.svg"; cell.style.backgroundColor = "#89A41C"; }
+      else if(map[i][j] ===0 && j%2==1) {cell.src = "assets/safe2.svg"; cell.style.backgroundColor = "#89A41C"; }
+      else if(map[i][j] == 1 && (i==1 || i==4)) {cell.src = "assets/road2.svg"; cell.style.backgroundColor = "#191919";}
+      else if(map[i][j] ==1 && (i==2 || i == 5)){cell.src = "assets/road1.svg"; cell.style.backgroundColor = "#191919";}
+      else if(map[i][j] ==1 && i==3){cell.src = "assets/road.svg"; cell.style.backgroundColor = "#191919";}
+      cell.style.float = "left";
+    }
+
+  }
+}
 }
 
-function render(){
-  window.open("gamepage.html", '_self',false);
-}
+
+
+/*function render(){
+
+
+
+
+}*/
