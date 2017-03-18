@@ -78,32 +78,56 @@ function clickHandler() {
   }
 }*/
 
-function render() {
 
 
-}
 
 
 var startButton = document.querySelector("#startButton");
 startButton.addEventListener("click", startGameHandler , false);
+
 function startGameHandler() {
   if(unknownimg.src.toString() === orUnknownImageSrc) window.alert(" Please Select character :) ");
-  else {document.getElementById("gameBody").innerHTML = "";
+  else {
+render();}
+
+}
+
+var map = [
+  [0,0,0,0,0,0,0],
+  [1,1,1,1,1,1,1],
+  [1,1,1,1,1,1,1],
+  [0,0,0,0,0,0,0],
+  [1,1,1,1,1,1,1],
+  [1,1,1,1,1,1,1],
+  [0,0,0,0,0,0,0]
+];
+
+var grass = 5;
+var car = 6;
+var chara = 1;
+var charmoveX = 6;
+var charmoveY = 3;
+
+var movemap = [
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,grass,0,grass,0,grass,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0],
+  [0,0,0,0,0,0,0]
+];
+
+function render() {
+
+document.getElementById("gameBody").innerHTML = "";
   var gameboard = document.querySelector('#gameBody');
-  var map = [
-    [0,0,0,0,0,0,0],
-    [1,1,1,1,1,1,1],
-    [1,1,1,1,1,1,1],
-    [0,0,0,0,0,0,0],
-    [1,1,1,1,1,1,1],
-    [1,1,1,1,1,1,1],
-    [0,0,0,0,0,0,0]
-  ];
 
   var Size = 10;
   var Space = 1;
   var mapRows = map.length;
   var mapColumns = map[0].length;
+
 
   for(var i = 0; i < mapRows; i++ ){
     for(var j=0;j< mapColumns ; j++){
@@ -120,17 +144,20 @@ function startGameHandler() {
       else if(map[i][j] ==1 && (i==2 || i == 5)){cell.src = "assets/road1.svg"; cell.style.backgroundColor = "#191919";}
       else if(map[i][j] ==1 && i==3){cell.src = "assets/road.svg"; cell.style.backgroundColor = "#191919";}
       cell.style.float = "left";
+
+      if(i==charmoveX && j==charmoveY){
+      cell.src = unknownimg.src;}
     }
-
-  }
 }
+console.log(unknownimg.src.toString());
+
 }
+window.addEventListener('keydown', keyHandler, false);
 
-
-
-/*function render(){
-
-
-
-
-}*/
+function keyHandler(event){
+  if(event.keyCode == 38 && charmoveX>0 && movemap[charmoveX-1][charmoveY] ==0) {movemap[charmoveX][charmoveY] = 0; charmoveX--; movemap[charmoveX][charmoveY] = chara;}
+  else if(event.keyCode == 40 && charmoveX < map.length-1 && movemap[charmoveX+1][charmoveY] ==0) {movemap[charmoveX][charmoveY] = 0; charmoveX++; movemap[charmoveX][charmoveY] = chara;}
+  else if(event.keyCode == 39 && charmoveY < map[0].length-1&& movemap[charmoveX][charmoveY+1] ==0 ) {movemap[charmoveX][charmoveY] = 0; charmoveY++; movemap[charmoveX][charmoveY] = chara;}
+  else if(event.keyCode == 37 && charmoveY>0&& movemap[charmoveX][charmoveY-1] ==0) {movemap[charmoveX][charmoveY] = 0; charmoveY--; movemap[charmoveX][charmoveY] = chara;}
+  render();
+}
